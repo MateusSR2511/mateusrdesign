@@ -1,0 +1,217 @@
+* {
+  font-family: 'EB Garamond', serif;
+}
+
+header {
+  background-color: #00313C;
+  height: 6em;
+  font-weight: 500;
+  font-size: 1.2em;
+}
+
+header .container {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .container img {
+  max-width: 12em;
+}
+
+header .mateusMenu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .mateusMenu li a {
+  padding: 0 0.7rem;
+  color: #D9B48F;
+  text-decoration: none;
+}
+
+header .mateusMenu li a:hover {
+  color: #D9D9D6;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+header .mateusMenu li:first-child a {
+  padding-left: 0;
+}
+
+header .mateusMenu li:last-child a {
+  padding-right: 0;
+}
+
+#inicio {
+  background-color: #00313C;
+  height: 33em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#inicio h1 {
+  color: #D9D9D6;
+  font-size: 5.5em;
+  font-weight: 700;
+  padding-right: 8em;
+  position: relative;
+  z-index: 10;
+  line-height: 1.1;
+}
+
+#inicio img {
+  max-height: 20em;
+  max-width: 80em;
+  border-radius: 0.9em;
+  margin-left: -12em;
+  margin-top: 1.7em;
+}
+
+#inicio #heroimage {
+  float: right;
+}
+
+#inicio span {
+  border-right: .05em solid;
+  -webkit-animation: caret 0.4s steps(1) infinite;
+          animation: caret 0.4s steps(1) infinite;
+}
+
+@-webkit-keyframes caret {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes caret {
+  50% {
+    border-color: transparent;
+  }
+}
+
+#inicio .btn-orcamento {
+  position: relative;
+  color: #D9D9D6;
+  background-color: #8A1538;
+  font-weight: bold;
+  font-size: 1.2em;
+  letter-spacing: 0.05em;
+  margin: 0.7em 0em;
+  padding: 0.7em 3em;
+  border-radius: 0.5em;
+}
+
+#inicio .btn-orcamento:hover,
+#inicio .btn-orcamento:active,
+#inicio .btn-orcamento:focus {
+  background: #D9D9D6;
+  color: #00313C;
+}
+
+#fancytext {
+  position: relative;
+}
+
+#fancytext h2 {
+  color: #D9B48F;
+  font-size: 1.7em;
+  padding: 0px;
+  margin-bottom: 0px;
+}
+
+#fancytext h3 {
+  color: #D9B48F;
+  font-size: 1.7em;
+  padding-right: 5em;
+  margin-bottom: 1em;
+}
+
+#portfolio {
+  background-color: #00313C;
+  padding: 2em 0em 2em 0em;
+}
+
+#portfolio h2 {
+  text-justify: center;
+  font-size: 2.5em;
+  color: #D9B48F;
+}
+
+#portfolio p {
+  color: #D9D9D6;
+  font-size: 1.2em;
+  margin-bottom: 3em;
+}
+
+#portfolio img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  width: 33em;
+  height: 33em;
+  border-radius: 1em;
+  margin-top: 1.2em;
+  margin-bottom: 1.2em;
+}
+
+#thumbnails {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#inteligente div {
+  width: 100%;
+}
+
+#inteligente .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+}
+
+#inteligente .row #left {
+  background: yellow;
+  /** Just to emphasize vertical split visually. You can remove this */
+  width: 50%;
+}
+
+#inteligente .row #right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background: green;
+  /** Just to emphasize vertical split visually. You can remove this */
+}
+/*# sourceMappingURL=main.css.map */

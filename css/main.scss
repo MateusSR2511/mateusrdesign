@@ -1,0 +1,190 @@
+// Colors
+$mateusRed: #8A1538;
+$mateusBlue: #00313C;
+$mateusGrey: #D9D9D6;
+$mateusYellow: #D9B48F;
+$mateusBYellow: #7A6855;
+
+// Font sizes
+$smallFont: 1.2em;
+$mediumFont: 1.7em;
+$largeFont: 2.5em;
+$bigFont: 5.5em;
+
+*{
+    font-family: 'EB Garamond', serif;
+}
+
+
+header {
+    background-color: $mateusBlue;
+    height: 6em;
+    font-weight: 500;
+    font-size: $smallFont;
+
+    .container{
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        img {
+            max-width: 12em;
+        }
+    }
+    .mateusMenu{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        li a {
+            padding: 0 0.7rem;
+            color: $mateusYellow;
+            text-decoration: none;
+        }
+        li a:hover{
+            color: $mateusGrey;
+            transition-duration: 0.5s;
+        }
+        li:first-child a{
+            padding-left: 0;
+        }
+        li:last-child a{
+            padding-right: 0;
+        }
+    }
+}
+
+#inicio {
+    background-color: $mateusBlue;
+    height: 33em;
+    display: flex;
+    align-items: center;
+    h1{
+        color: $mateusGrey;
+        font-size: $bigFont;
+        font-weight: 700;
+        padding-right: 8em;
+        position: relative;
+        z-index: 10;
+        line-height: 1.1;
+    }
+    
+    img{
+        max-height: 20em;
+        max-width: 80em;
+        border-radius: 0.9em;
+        margin-left: -12em;
+        margin-top: 1.7em;
+        //margin-left: auto;
+        //position: absolute;
+        //align-self: flex-start;
+    }
+    #heroimage{
+        float: right;
+    }
+    span {
+        border-right: .05em solid;
+        animation: caret 0.4s steps(1) infinite;
+    }
+    @keyframes caret {
+        50% {
+            border-color: transparent;
+        }
+    }
+
+    .btn-orcamento {
+        position: relative;
+        color: $mateusGrey;
+        background-color: $mateusRed;
+        font-weight: bold;
+        font-size: $smallFont;
+        letter-spacing: 0.05em;
+        margin: 0.7em 0em;
+        padding: 0.7em 3em;
+        border-radius: 0.5em;
+
+    }
+    
+    .btn-orcamento:hover,
+    .btn-orcamento:active,
+    .btn-orcamento:focus {
+        background: $mateusGrey;
+        color: $mateusBlue;
+    }
+}
+
+#fancytext{
+    
+    position: relative;
+    //padding-top: 18em;
+
+    h2 {
+        color: $mateusYellow;
+        font-size: $mediumFont;
+        padding: 0px;
+        margin-bottom: 0px;
+    }
+    h3{
+        color: $mateusYellow;
+        font-size: $mediumFont;
+        padding-right: 5em;
+        margin-bottom: 1em;
+    }
+
+}
+
+#portfolio {
+    background-color: $mateusBlue;
+    padding: 2em 0em 2em 0em;
+    h2{
+        text-justify: center;
+        font-size: $largeFont;
+        color: $mateusYellow;
+    }
+    p{
+        color: $mateusGrey;
+        font-size: $smallFont;
+        margin-bottom: 3em;
+    }
+    img{
+        object-fit: cover;
+        object-position: center;
+        width: 33em;
+        height: 33em;
+        border-radius: 1em;
+        margin-top: 1.2em;
+        margin-bottom: 1.2em;
+    }
+}
+
+#thumbnails{
+    display: flex;
+    justify-content: space-around;
+}
+
+#inteligente {
+
+    div {
+        width: 100%;
+    }
+
+    .row {
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        width: 100%;
+     }
+     
+     .row #left {
+         background: yellow; /** Just to emphasize vertical split visually. You can remove this */
+         width: 50%;
+        }
+        
+        
+    .row #right {
+        flex: 1;
+        background: green; /** Just to emphasize vertical split visually. You can remove this */
+     }
+
+}
